@@ -1,5 +1,44 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#0758a8"><title>Stenlej — We grow together</title><link rel="stylesheet" href="style.css"></head><body>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0758a8">
+<title>Stenlej — We grow together</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
 <div id="app">
-<section id="welcome" class="welcome"><img src="assets/logo.png" class="logo"><h1>Welcome to Stenlej</h1><p>We grow together.</p><div class="lang"><button onclick="start('en')">🇬🇧 ENGLISH</button><button onclick="start('mk')">🇲🇰 МАКЕДОНСКИ</button></div></section>
-<section id="show" class="show hidden"><div id="bg" class="bg"></div><div class="shade"></div><header><img src="assets/logo.png"><button id="sound" onclick="togglePause()">❚❚</button></header><main><div id="kicker"></div><h2 id="title"></h2><p id="text"></p><div id="stats" class="stats"></div></main><footer><div class="progress"><i id="bar"></i></div><span id="counter"></span><button onclick="restart()">↻</button></footer></section>
-</div><script src="script.js"></script></body></html>
+  <section id="welcome" class="welcome">
+    <div class="brand">STENLEJ</div>
+    <h1>Welcome to Stenlej</h1>
+    <p>We grow together.</p>
+    <div class="lang">
+      <button id="btn-en" type="button">🇬🇧 ENGLISH</button>
+      <button id="btn-mk" type="button">🇲🇰 МАКЕДОНСКИ</button>
+    </div>
+  </section>
+
+  <section id="show" class="show hidden">
+    <div id="bg" class="bg"></div>
+    <div class="shade"></div>
+    <header>
+      <div class="brand">STENLEJ</div>
+      <button id="sound" type="button">❚❚</button>
+    </header>
+    <main>
+      <div id="kicker"></div>
+      <h2 id="title"></h2>
+      <p id="text"></p>
+      <div id="stats" class="stats"></div>
+    </main>
+    <footer>
+      <div class="progress"><i id="bar"></i></div>
+      <span id="counter"></span>
+      <button id="restart" type="button">↻</button>
+    </footer>
+  </section>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

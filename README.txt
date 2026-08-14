@@ -1,6 +1,9 @@
-STENLEJ QR PRESENTATION
-1. Upload all files in this folder to any static web host (GitHub Pages works).
-2. Open index.html through the published web address.
-3. Create a QR code pointing to that published address.
-4. The presentation has English and Macedonian language selection and auto-advancing slides.
-5. Text, images, contact buttons and future production figures can be updated later.
+STENLEJ - FIXED GITHUB PAGES SITE
+
+Upload ALL files from this folder to the ROOT of the GitHub repository.
+Replace index.html, script.js and style.css when GitHub asks.
+
+Important:
+- Do not create an assets folder.
+- Keep stenlej_01.jpg ... stenlej_19.jpg in the same root folder.
+- GitHub Pages: main / (root)
