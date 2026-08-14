@@ -1,9 +1,6 @@
-STENLEJ - FIXED GITHUB PAGES SITE
-
-Upload ALL files from this folder to the ROOT of the GitHub repository.
-Replace index.html, script.js and style.css when GitHub asks.
-
-Important:
-- Do not create an assets folder.
-- Keep stenlej_01.jpg ... stenlej_19.jpg in the same root folder.
-- GitHub Pages: main / (root)
+STENLEJ V2
+Changes:
+- Real Stenlej plum logo above STENLEJ on the welcome screen
+- Animated down arrow appears after language selection
+- Logo also appears on the presentation slides
+Upload all files to the GitHub repository root and replace existing files.

@@ -26,7 +26,6 @@ let lang='en', i=0, timer=null, paused=false, duration=6500;
 
 function startPresentation(l){
   lang=l;
-  document.getElementById('welcome').classList.add('hidden');
   document.getElementById('show').classList.remove('hidden');
   i=0; paused=false;
   document.getElementById('sound').textContent='❚❚';
@@ -57,12 +56,23 @@ function togglePause(){
 }
 function restart(){
   clearTimeout(timer);
-  document.getElementById('show').classList.add('hidden');
-  document.getElementById('welcome').classList.remove('hidden');
+  document.getElementById('downHint').classList.remove('show');
+  window.scrollTo({top:0,behavior:'smooth'});
   paused=false;
 }
-document.getElementById('btn-en').addEventListener('click',()=>startPresentation('en'));
-document.getElementById('btn-mk').addEventListener('click',()=>startPresentation('mk'));
+function chooseLanguage(l){
+  lang=l;
+  const hint=document.getElementById('downHint');
+  document.getElementById('downText').textContent = l==='mk' ? 'Продолжи кон презентацијата' : 'Continue to the presentation';
+  hint.classList.add('show');
+  setTimeout(()=>{
+    document.getElementById('show').classList.remove('hidden');
+    document.getElementById('show').scrollIntoView({behavior:'smooth'});
+    setTimeout(()=>startPresentation(l),450);
+  },550);
+}
+document.getElementById('btn-en').addEventListener('click',()=>chooseLanguage('en'));
+document.getElementById('btn-mk').addEventListener('click',()=>chooseLanguage('mk'));
 document.getElementById('sound').addEventListener('click',togglePause);
 document.getElementById('restart').addEventListener('click',restart);
 document.addEventListener('click',e=>{

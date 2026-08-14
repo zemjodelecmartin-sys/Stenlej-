@@ -10,12 +10,18 @@
 <body>
 <div id="app">
   <section id="welcome" class="welcome">
-    <div class="brand">STENLEJ</div>
-    <h1>Welcome to Stenlej</h1>
-    <p>We grow together.</p>
-    <div class="lang">
-      <button id="btn-en" type="button">🇬🇧 ENGLISH</button>
-      <button id="btn-mk" type="button">🇲🇰 МАКЕДОНСКИ</button>
+    <div class="welcome-inner">
+      <img class="welcome-logo" src="stenlej_logo.png" alt="Stenlej logo">
+      <h1>STENLEJ</h1>
+      <p>We grow together.</p>
+      <div class="lang">
+        <button id="btn-en" type="button">🇬🇧 ENGLISH</button>
+        <button id="btn-mk" type="button">🇲🇰 МАКЕДОНСКИ</button>
+      </div>
+      <div id="downHint" class="down-hint" aria-hidden="true">
+        <span id="downText">Scroll to discover</span>
+        <div class="arrow">↓</div>
+      </div>
     </div>
   </section>
 
@@ -23,8 +29,8 @@
     <div id="bg" class="bg"></div>
     <div class="shade"></div>
     <header>
-      <div class="brand">STENLEJ</div>
-      <button id="sound" type="button">❚❚</button>
+      <img class="top-logo" src="stenlej_logo.png" alt="Stenlej logo">
+      <button id="sound" type="button" aria-label="Pause">❚❚</button>
     </header>
     <main>
       <div id="kicker"></div>
@@ -35,7 +41,7 @@
     <footer>
       <div class="progress"><i id="bar"></i></div>
       <span id="counter"></span>
-      <button id="restart" type="button">↻</button>
+      <button id="restart" type="button" aria-label="Restart">↻</button>
     </footer>
   </section>
 </div>
